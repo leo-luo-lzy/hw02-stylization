@@ -38,6 +38,8 @@ GIF previews are shown below. Full videos are available in the
 - **Rim highlight:** An adjustable rim light highlights the character's edges.
 - **Custom shadows:** A seamless wave and bubble texture adds patterns to shadows. It uses object UV0 with adjustable scale and strength.
 - **Special shader:** A second shader creates a water dissolve effect with moving noise, a changing dissolve threshold, and blue edges.
+- **Full Screen Feature fix:** Added a second Blit to copy the
+  processed image from the temporary buffer back to the camera.
 - **Outlines:** Roberts Cross detects edges from separate depth and normal buffers. Outline width is adjustable.
 - **Animated outlines:** Time-based offsets make the outlines wobble.
 - **Fullscreen effect:** A vignette darkens the edges of the image.
