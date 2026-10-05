@@ -21,17 +21,15 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: "\u88D92+"
-  m_Shader: {fileID: -6465566751694194690, guid: e451eb018e018470b8b1a0374368b7d5,
+  m_Shader: {fileID: -6465566751694194690, guid: f9d9b517825a842d59a1d321ae79f822,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - MAIN_LIGHT_CALCULATE_SHADOWS
-  - _ADDITIONAL_LIGHTS
   - _MAIN_LIGHT_SHADOWS_CASCADE
   - _SHADOWS_SOFT
-  m_InvalidKeywords:
-  - ADDITIONAL_LIGHT_CALCULATE_SHADOWS
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -131,6 +129,8 @@ Material:
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _Dissolve: 0
+    - _DissolveEdgeStrength: 1.5
+    - _DissolveEdgeWidth: 0.04
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
@@ -165,6 +165,7 @@ Material:
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DissolveEdgeCol: {r: 0.2361606, g: 0.4906439, b: 0.5754717, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Highlight: {r: 0.9150943, g: 0.7122197, b: 0.878966, a: 0}
     - _Midtone: {r: 0.8113207, g: 0.41714126, b: 0.46676296, a: 0}

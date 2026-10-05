@@ -8,14 +8,12 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: body
-  m_Shader: {fileID: -6465566751694194690, guid: e451eb018e018470b8b1a0374368b7d5,
+  m_Shader: {fileID: -6465566751694194690, guid: f9d9b517825a842d59a1d321ae79f822,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - ADDITIONAL_LIGHT_CALCULATE_SHADOWS
   - MAIN_LIGHT_CALCULATE_SHADOWS
-  - _ADDITIONAL_LIGHTS
   - _MAIN_LIGHT_SHADOWS_CASCADE
   - _SHADOWS_SOFT
   m_InvalidKeywords: []
@@ -57,6 +55,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _ILMMap:
+        m_Texture: {fileID: 2800000, guid: dbb3996042f0549b7a8aab538cbc1198, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -73,8 +75,16 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _RampMap:
+        m_Texture: {fileID: 2800000, guid: 93813f571df33417fb4b6bfa4a696cb0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_2a5086c345ce4842869c9f5668c9844a_Texture_1_Texture2D:
         m_Texture: {fileID: 2800000, guid: 787258801a5b740c0bbc55bcc86164f7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ShadowPattern:
+        m_Texture: {fileID: 2800000, guid: 7ddb89f09cb65460f8ee9dcf1d3923cf, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
@@ -109,6 +119,9 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
+    - _Dissolve: 0
+    - _DissolveEdgeStrength: 1.5
+    - _DissolveEdgeWidth: 0.04
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
@@ -118,12 +131,17 @@ Material:
     - _Highlight_Threshold: 0.3
     - _MAIN_LIGHT_SHADOWS_CASCADE: 1
     - _Metallic: 0
+    - _NoiseScale: 20
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
+    - _RimPower: 4
+    - _RimStrength: 0.5
     - _SHADOWS_SOFT: 1
+    - _ShadowScale: 20
+    - _ShadowStrength: 0.25
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -136,11 +154,15 @@ Material:
     m_Colors:
     - _BaseColor: {r: 0.8396226, g: 0.57295, b: 0.43961373, a: 1}
     - _Color: {r: 0.8396226, g: 0.57295, b: 0.4396137, a: 1}
+    - _DissolveEdgeCol: {r: 0.2361606, g: 0.4906439, b: 0.5754717, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Highlight: {r: 0.9150943, g: 0.7122197, b: 0.878966, a: 0}
     - _Midtone: {r: 0.8113207, g: 0.41714126, b: 0.46676296, a: 0}
+    - _Ramped_Diffuse_Values: {r: 0.2, g: 0.4, b: 1, a: 0}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 0}
     - _Shadow: {r: 0.6886792, g: 0.26962435, b: 0.52840203, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _Thresholds: {r: 0.2, g: 0.8, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &7811900542248869577
 MonoBehaviour:

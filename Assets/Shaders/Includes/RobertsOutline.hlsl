@@ -9,11 +9,11 @@ void RobertsOutline_float(
     float NormalThreshold,
     out float Edge)
 {
-    float t = floor(_Time.y * 3.0) / 3.0;
+    float t = floor(_Time.y * 6.0) / 6.0;
 
     float2 wobble = float2(sin(UV.y * 31.0 + t * 1.8),cos(UV.x * 63.0 + t * 1.2));
 
-    UV += wobble * NormalTex.texelSize.xy * 0.8;
+    UV += wobble * NormalTex.texelSize.xy * 1.0;
 
     float2 offset = NormalTex.texelSize.xy * max(Width, 0.0) * 0.5;
 
