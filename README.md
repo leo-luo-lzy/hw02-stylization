@@ -13,17 +13,23 @@
 </p>
 
 ### Final Result
+GIF previews are shown below. Full videos are available in the
+[Result folder](Result/).
+
 ![](Result/result1.gif)
 *Turnaround*
 
 ![](Result/result2.gif)
-*Multilight*
+*Multiple lights*
 
 ![](Result/result3.gif)
 *Dissolve*
 
 ![](Result/result4.png)
-*Dissolve*
+*Vignette*
+
+![](Result/result5.png)
+*Rim*
 
 
 ### Features
@@ -57,6 +63,11 @@ It uses object UV0, with adjustable Shadow Scale and Shadow Strength.
 <img src="Assets/texture/Body/Lightmap/Avatar_Girl_Sword_Furina_Tex_Body_Lightmap.png" width="250"> 
 <em>ILM</em>
 
+### How to Run
+
+Open `Assets/Scenes/HW Base.unity` in Unity 2022.3.9f1.
+Set Game resolution to 1920 × 1080, press Play, and press Space
+to switch between normal and dissolve materials.
 
 ### Credit
 - **Concept art — Furina Card:** Artwork by miHoYo / HoYoverse.
